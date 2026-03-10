@@ -44,6 +44,25 @@
             outline: none;
         }
     </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1666841367831037');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1666841367831037&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
 </head>
 <body class="bg-gray-50 min-h-screen">
 
@@ -122,6 +141,7 @@
               <a
                 href="http://qr.kakao.com/talk/TsA39sutU99iYVNBshUJKFNBDpo-"
                 target="_blank"
+                onClick="fbq('trackCustom', 'Click_Kakao');"
                 class="w-full sm:w-1/2 bg-yellow-400 text-black py-4 px-6 rounded-lg font-bold hover:bg-yellow-500 transition flex flex-col items-center justify-center gap-1 text-center shadow-md hover:shadow-lg"
               >
                 <i class="ri-kakao-talk-fill ri-xl"></i>
@@ -132,6 +152,7 @@
               <!-- 전화 연결 버튼 -->
               <a
                 href="tel:010-7301-7745"
+                onClick="fbq('trackCustom', 'Click_Phone');"
                 class="w-full sm:w-1/2 bg-blue-600 text-white py-4 px-6 rounded-lg font-bold hover:bg-blue-700 transition flex flex-col items-center justify-center gap-1 text-center shadow-md hover:shadow-lg"
               >
                 <i class="ri-phone-fill ri-xl"></i>
@@ -474,6 +495,7 @@
         <!-- 카카오톡 버튼 -->
         <a
           href="http://qr.kakao.com/talk/TsA39sutU99iYVNBshUJKFNBDpo-"
+          onClick="fbq('trackCustom', 'Click_Kakao');"
           target="_blank"
           class="w-full sm:w-auto bg-yellow-400 text-black py-4 px-8 rounded-lg font-bold hover:bg-yellow-500 transition flex flex-col items-center justify-center gap-1 shadow-md hover:shadow-lg text-center"
         >
@@ -485,6 +507,7 @@
         <!-- 전화 버튼 -->
         <a
           href="tel:010-7301-7745"
+          onClick="fbq('trackCustom', 'Click_Phone');"
           class="w-full sm:w-auto bg-white text-primary py-4 px-8 rounded-lg font-bold hover:bg-gray-100 transition flex flex-col items-center justify-center gap-1 shadow-md hover:shadow-lg text-center"
         >
           <i class="ri-phone-fill ri-xl"></i>
